@@ -1,0 +1,24 @@
+@mixin navBarMeasurements {
+  width: 1110px;
+  height: 74px;
+  margin: auto;
+}
+
+@mixin listStyleNav {
+    list-style: none;
+    display: inline-block;
+}
+
+@mixin jumbotronMeasurements {
+  width: 1110px;
+  padding: 184px 0 90px;
+  margin: auto;
+}
+
+@mixin btn {
+  padding: 12px 20px;;
+  text-decoration: none;
+  color: $buttonColor;
+  border: 1px solid $buttonColor;
+  border-radius: 7px;
+}
