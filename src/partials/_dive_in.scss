@@ -1,0 +1,69 @@
+#awesome {
+  @include containerSpace;
+  margin-top: 150px;
+  #top-part {
+    text-align: center;
+    #quickstart {
+      color: $navMenuHoverColor;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: $h2size;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    p {
+      color: $fontColor;
+      span {
+        color: $navMenuHoverColor;
+        font-weight: bold;
+      }
+    }
+  }
+  #bottom-part {
+    width: 704px;
+    margin: auto;
+    margin-top: 100px;
+    #pannel {
+      // align-self: center;
+      background-color: $pannelColor;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      ul {
+        background-color: #4F5A69;
+        border: 1px solid #586270;
+        border-radius: 5px;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 60px;
+        font-size: 18px;
+        color: white;
+      }
+      .active {
+        background-color: $pannelColor;
+        border-radius: 5px;
+      }
+      p {
+        color: $fontColor;
+        font-weight: bold;
+        margin-top: 20px;
+        span {
+          color: #2eca8b;
+        }
+      }
+    }
+  }
+  #checkmarks li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    color: $fontColor;
+    font-weight: bold;
+    i {
+      color: #2eca8b;
+    }
+  }
+}

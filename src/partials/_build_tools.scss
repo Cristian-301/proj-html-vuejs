@@ -1,0 +1,47 @@
+#build-tools {
+  @include containerSpace;
+  margin-top: 150px;
+  display: flex;
+  // background-image: url($toolsImage);
+  // background-repeat: no-repeat;
+  // background-position: right;
+  #toolsImg {
+    width: 50%;
+    img {
+      height: 450px;
+      float: right;
+    }
+  }
+  #info {
+    width: 50%;
+    h2 {
+      font-size: $h2size;
+      margin-bottom: 40px;
+    }
+    p {
+      color: $fontColor;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    ul {
+      margin-bottom: 40px;
+    }
+    li {
+      list-style: none;
+      color: $fontColor;
+      font-weight: bold;
+      i {
+        color: $navMenuHoverColor;
+        margin-bottom: 10px;
+      }
+    }
+    a {
+      @include btn;
+      background-color: $buttonColor;
+      color: white;
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+}
