@@ -1,6 +1,9 @@
 #jumbotron {
   @include jumbotronMeasurements;
-  #j-right {
+  background-image: url($jumbotronImage);
+  background-repeat: no-repeat;
+  background-position: right;
+  #j-left {
     width: 50%;
     h1 {
       font-size: 46px;

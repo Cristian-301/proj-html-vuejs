@@ -2,7 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+
+#jumbotron-container {
+  border-bottom: 1px solid #e9ecef;
 }
 
 header {
@@ -27,7 +31,7 @@ header {
 #navbar #menu {
   float: left;
   height: 100%;
-  width: calc(100% - 134px - 172px);
+  width: calc(100% - 134px - 174px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,17 +90,20 @@ header {
   width: 1110px;
   padding: 184px 0 90px;
   margin: auto;
+  background-image: url("../img/about.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
-#jumbotron #j-right {
+#jumbotron #j-left {
   width: 50%;
 }
-#jumbotron #j-right h1 {
+#jumbotron #j-left h1 {
   font-size: 46px;
   margin-top: 10px;
   margin-bottom: 25px;
   line-height: 1.3;
 }
-#jumbotron #j-right #dev {
+#jumbotron #j-left #dev {
   display: inline-block;
   background-color: #E4E9F8;
   color: #007bff;
@@ -106,36 +113,117 @@ header {
   font-weight: 500;
   font-size: 12px;
 }
-#jumbotron #j-right .text {
+#jumbotron #j-left .text {
   color: #adb5bd;
   font-size: 18px;
   line-height: 1.5;
 }
-#jumbotron #j-right #buttons {
+#jumbotron #j-left #buttons {
   margin-top: 40px;
   margin-bottom: 20px;
 }
-#jumbotron #j-right #buttons #start {
+#jumbotron #j-left #buttons #start {
   padding: 12px 20px;
   text-decoration: none;
-  color: #2F54D4;
-  border: 1px solid #2F54D4;
+  color: #2F55D4;
+  border: 1px solid #2F55D4;
   border-radius: 7px;
   color: white;
-  background-color: #2F54D4;
+  background-color: #2F55D4;
   margin-right: 10px;
 }
-#jumbotron #j-right #buttons #start:hover {
-  background-color: #284ac1;
+#jumbotron #j-left #buttons #start:hover {
+  background-color: #284bc1;
 }
-#jumbotron #j-right #buttons #doc {
+#jumbotron #j-left #buttons #doc {
   padding: 12px 20px;
   text-decoration: none;
-  color: #2F54D4;
-  border: 1px solid #2F54D4;
+  color: #2F55D4;
+  border: 1px solid #2F55D4;
   border-radius: 7px;
 }
-#jumbotron #j-right #buttons #doc:hover {
-  background-color: #2F54D4;
+#jumbotron #j-left #buttons #doc:hover {
+  background-color: #2F55D4;
   color: white;
+}
+
+#logos-container {
+  height: 120px;
+}
+#logos-container #logos {
+  width: 1110px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  border-bottom-left-radius: 22%;
+  border-bottom-right-radius: 22%;
+  padding-bottom: 53px;
+  background-color: #F8F9FC;
+}
+#logos-container #logos .logo {
+  display: inline-block;
+}
+#logos-container #logos .logo img {
+  width: 160px;
+  height: 25px;
+}
+
+#key-features {
+  width: 1110px;
+  margin: auto;
+  margin-top: 150px;
+}
+#key-features h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+#key-features p {
+  color: #adb5bd;
+  font-weight: bold;
+}
+#key-features p span {
+  color: #2F55D4;
+}
+#key-features #features {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#key-features #features .card {
+  width: 20%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 2px 2px #e9ecef;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+#key-features #features .card:hover {
+  top: -10px;
+}
+#key-features #features .card .icon {
+  background-color: #E4E9F8;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+#key-features #features .card h3 {
+  margin-bottom: 20px;
+}
+#key-features #features .card p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+#key-features #features .card a {
+  text-decoration: none;
+}
+#key-features #features .card a .arrow {
+  font-size: 12px;
+  background-color: white;
 }

@@ -1,0 +1,23 @@
+#logos-container {
+  height: 120px;
+  #logos {
+    width: 1110px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    border-bottom-left-radius: 22%;
+    border-bottom-right-radius: 22%;
+    padding-bottom: 53px;
+    background-color: $headerBackgroundColor;
+    .logo {
+      display: inline-block;
+      img {
+        width: 160px;
+        height: 25px;
+      }
+    }
+  }
+}
