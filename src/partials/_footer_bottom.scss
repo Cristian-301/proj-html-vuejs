@@ -1,0 +1,18 @@
+#footer-bottom {
+  @include containerSpace;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  #copyright {
+    color: $fontColor;
+    span {
+      color: red;
+    }
+  }
+  #payment {
+    img {
+      height: 25px;
+    }
+  }
+}

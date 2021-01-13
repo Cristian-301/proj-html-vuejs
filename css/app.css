@@ -368,3 +368,137 @@ header {
 #build-tools #info a i {
   font-size: 12px;
 }
+
+footer {
+  background-color: #202942;
+}
+
+#top-container {
+  border-bottom: 1px solid #26304F;
+}
+
+#footer-top {
+  width: 1110px;
+  margin: auto;
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#footer-top #info-social img {
+  height: 24px;
+}
+#footer-top #info-social p {
+  margin: 40px 0;
+  color: #adb5bd;
+  font-weight: bold;
+}
+#footer-top #info-social li {
+  list-style: none;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+#footer-top #info-social li a {
+  color: white;
+}
+#footer-top #company h3, #footer-top #links h3 {
+  margin-bottom: 40px;
+  font-size: 1.4em;
+  font-weight: lighter;
+  color: white;
+}
+#footer-top #company li, #footer-top #links li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+#footer-top #company li a, #footer-top #links li a {
+  text-decoration: none;
+  color: #adb5bd;
+  transition: 0.5s ease;
+}
+#footer-top #company li a:hover, #footer-top #links li a:hover {
+  color: white;
+}
+#footer-top #company li a i, #footer-top #links li a i {
+  font-size: 12px;
+  margin-right: 15px;
+}
+#footer-top #newsletter h3 {
+  margin-bottom: 40px;
+  font-size: 1.4em;
+  font-weight: lighter;
+  color: white;
+}
+#footer-top #newsletter p {
+  color: #adb5bd;
+}
+#footer-top #newsletter #mail {
+  margin: 20px 0;
+  position: relative;
+  color: #adb5bd;
+}
+#footer-top #newsletter #mail span {
+  color: #E43F52;
+}
+#footer-top #newsletter #mail i {
+  position: absolute;
+  top: 44px;
+  left: 10px;
+}
+#footer-top #newsletter #mail input {
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #27314F;
+  transition: 0.5s ease;
+}
+#footer-top #newsletter #mail input:focus {
+  outline: none;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+#footer-top #newsletter #subscribe button {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #2F55D4;
+  border: 1px solid #2F55D4;
+  border-radius: 7px;
+  width: 100%;
+  background-color: #222E51;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 4px #233363;
+  transition: 0.5s ease;
+}
+#footer-top #newsletter #subscribe button:hover {
+  background-color: #2F54D4;
+  box-shadow: none;
+  color: white;
+}
+
+#footer-bottom {
+  width: 1110px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer-bottom #copyright {
+  color: #adb5bd;
+}
+#footer-bottom #copyright span {
+  color: red;
+}
+#footer-bottom #payment img {
+  height: 25px;
+}

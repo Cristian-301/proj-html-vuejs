@@ -46,3 +46,10 @@
   font-size: 170px;
   z-index: -1;
 }
+
+@mixin footerTitle {
+  margin-bottom: 40px;
+  font-size: 1.4em;
+  font-weight: lighter;
+  color: white;
+}
