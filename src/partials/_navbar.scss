@@ -20,10 +20,12 @@
     li {
       @include listStyleNav;
       margin: 0 20px;
+
       a {
         font-size: 14px;
         font-weight: bold;
         text-decoration: none;
+        text-transform: uppercase;
         color: $navbarFontColor;
         &:hover {
           color: $navMenuHoverColor;
@@ -48,6 +50,15 @@
       &:first-child {
         box-shadow: none;
         border: none;
+        i {
+          color: lightgrey;
+          &:hover{
+            color: lightgrey;
+          }
+        }
+      }
+      &:hover {
+        background-color: #2F54D4;
       }
       button {
         background-color: $headerBackgroundColor;
@@ -57,12 +68,16 @@
         font-weight: lighter;
         &:hover {
           cursor: pointer;
+
         }
       }
       i {
         font-size: 1.1em;
         padding: 11px;
-
+        color: #2F54D4;
+        &:hover {
+          color: white;
+        }
       }
     }
   }

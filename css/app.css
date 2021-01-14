@@ -45,6 +45,7 @@ header {
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
   color: #3C4858;
 }
 #navbar #menu li a:hover {
@@ -71,6 +72,15 @@ header {
   box-shadow: none;
   border: none;
 }
+#navbar #search li:first-child i {
+  color: lightgrey;
+}
+#navbar #search li:first-child i:hover {
+  color: lightgrey;
+}
+#navbar #search li:hover {
+  background-color: #2F54D4;
+}
 #navbar #search li button {
   background-color: #F8F9FC;
   border: none;
@@ -84,6 +94,10 @@ header {
 #navbar #search li i {
   font-size: 1.1em;
   padding: 11px;
+  color: #2F54D4;
+}
+#navbar #search li i:hover {
+  color: white;
 }
 
 #jumbotron {
