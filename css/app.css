@@ -413,6 +413,7 @@ footer {
   border-radius: 5px;
   height: 30px;
   width: 30px;
+  margin-right: 5px;
   line-height: 30px;
   text-align: center;
 }
@@ -515,4 +516,5 @@ footer {
 }
 #footer-bottom #payment img {
   height: 25px;
+  margin-right: 5px;
 }

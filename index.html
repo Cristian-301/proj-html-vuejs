@@ -175,47 +175,25 @@
           <div id="footer-top">
             <div id="info-social">
               <a href="#">
-                <img src="img/logo-light.png" alt="Landrick logo">
+                <img :src= "footerLogo" alt="Landrick logo">
               </a>
 
               <p>Start working with Landrick that can provide <br> everything you need to generate awareness,<br> drive traffic, connect.</p>
               <ul>
-                <li> <a href=""><i class="fab fa-facebook-f"></i></a> </li>
-                <li> <a href=""><i class="fab fa-instagram"></i></a> </li>
-                <li> <a href=""><i class="fab fa-twitter"></i></a> </li>
-                <li> <a href=""><i class="fab fa-linkedin-in"></i></a> </li>
+                <li v-for="social in socials"> <a :href="social.link" target="_blank"><i :class="social.icon"></i></a> </li>
               </ul>
             </div>
             <div id="company">
               <h3>Company</h3>
               <ul>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                <li v-for="info in companyLinks"><a :href="info.link" target="_blank"><i class="fas fa-chevron-right"></i> {{ info.name }}</a></li>
               </ul>
             </div>
             <div id="links">
               <h3>Usefull Links</h3>
               <ul>
-                <li>
-                  <a href="#"><i class="fas fa-chevron-right"></i> Usefull Links</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-chevron-right"></i> Usefull Links</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-chevron-right"></i> Usefull Links</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-chevron-right"></i> Usefull Links</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-chevron-right"></i> Usefull Links</a>
+                <li v-for="usefull in usefullLinks">
+                  <a :href="usefull.link" target="_blank"><i class="fas fa-chevron-right"></i> {{ usefull.name }}</a>
                 </li>
               </ul>
             </div>
@@ -241,20 +219,8 @@
             <p>&copy; 2021 Landrick. Design with <span>&hearts;</span> by Shreethemes.</p>
           </div>
           <div id="payment">
-            <a href="#">
-              <img src="img/american-ex.png" alt="">
-            </a>
-            <a href="#">
-              <img src="img/american-ex.png" alt="">
-            </a>
-            <a href="#">
-              <img src="img/american-ex.png" alt="">
-            </a>
-            <a href="#">
-              <img src="img/american-ex.png" alt="">
-            </a>
-            <a href="#">
-              <img src="img/american-ex.png" alt="">
+            <a v-for="card in cards" :href="card.link" target="_blank">
+              <img :src="card.image" alt="">
             </a>
           </div>
         </div>
