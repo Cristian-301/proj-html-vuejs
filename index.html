@@ -21,7 +21,7 @@
           </div>
           <div id="menu">
             <ul>
-              <li v-for="menu in navMenu"> <a :href=" menu.link " target="_blank"> {{ menu.name }} </a> </li>
+              <li v-for="menu in navMenu"> <a :href=" menu.link " target="_blank"> {{ menu.name }} <i :class="menu.dropdown"></i> </a> </li>
             </ul>
           </div>
           <div id="search">

@@ -9,15 +9,18 @@ var app = new Vue({
       },
       {
         name: "Landing",
-        link: "https://google.com/"
+        link: "https://google.com/",
+        dropdown: "fas fa-chevron-down"
       },
       {
         name: "Pages",
-        link: "https://www.wallpaperflare.com/"
+        link: "https://www.wallpaperflare.com/",
+        dropdown: "fas fa-chevron-down"
       },
       {
         name: "Docs",
-        link: "https://vuejs.org/"
+        link: "https://vuejs.org/",
+        dropdown: "fas fa-chevron-down"
       },
     ],
 
@@ -32,7 +35,7 @@ var app = new Vue({
       },
       {
         icon: "far fa-user",
-        link: ""
+        link: "#"
       }
     ]
   }
