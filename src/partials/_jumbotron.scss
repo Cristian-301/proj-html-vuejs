@@ -39,7 +39,7 @@
       }
       #doc {
         @include btn;
-        background-color: white;
+        background-color: $headerBackgroundColor;
         box-shadow: none;
         &:hover {
           background-color: $buttonColor;

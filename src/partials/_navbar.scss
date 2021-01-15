@@ -58,7 +58,7 @@
         }
       }
       &:hover {
-        background-color: #2F54D4;
+        background-color: $buttonColor;
       }
       button {
         background-color: $headerBackgroundColor;
@@ -74,15 +74,11 @@
       i {
         font-size: 1.1em;
         padding: 10px;
-        color: #2F54D4;
+        color: $buttonColor;
         &:hover {
           color: white;
         }
       }
     }
   }
-  // #sign-in {
-  //   height: 100%;
-  //   background-color: black;
-  // }
 }

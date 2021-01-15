@@ -30,7 +30,113 @@
 }
 
 header {
+  position: relative;
   background-color: #F8F9FC;
+}
+
+#sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#sign-in #sign-in-window {
+  width: 60%;
+  height: 75%;
+  display: flex;
+  border-radius: 10px;
+  background-color: white;
+}
+#sign-in #sign-in-window #left-img {
+  width: 50%;
+  height: 100%;
+}
+#sign-in #sign-in-window #left-img img {
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#sign-in #sign-in-window #sign-right {
+  width: 50%;
+  padding: 50px 20px;
+}
+#sign-in #sign-in-window #sign-right #your_mail {
+  position: relative;
+  margin-bottom: 20px;
+}
+#sign-in #sign-in-window #sign-right #your_mail input {
+  width: 100%;
+  height: 40px;
+  padding-left: 45px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+#sign-in #sign-in-window #sign-right #your_mail i {
+  font-size: 16px;
+  position: absolute;
+  top: 42px;
+  left: 17px;
+}
+#sign-in #sign-in-window #sign-right #your_password {
+  position: relative;
+}
+#sign-in #sign-in-window #sign-right #your_password input {
+  width: 100%;
+  height: 40px;
+  padding-left: 45px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+#sign-in #sign-in-window #sign-right #your_password i {
+  font-size: 16px;
+  position: absolute;
+  top: 42px;
+  left: 17px;
+}
+#sign-in #sign-in-window #sign-right #checkbox {
+  margin-top: 20px;
+}
+#sign-in #sign-in-window #sign-right #checkbox label {
+  margin-right: 85px;
+}
+#sign-in #sign-in-window #sign-right #checkbox a {
+  color: black;
+  text-decoration: none;
+}
+#sign-in #sign-in-window #sign-right #sign-in-button {
+  margin-top: 20px;
+  text-align: center;
+}
+#sign-in #sign-in-window #sign-right #sign-in-button button {
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: #2F55D4;
+  color: #2F55D4;
+  border: 1px solid #2F55D4;
+  border-radius: 7px;
+  box-shadow: 0px 2px 5px 0px #2F55D4;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+}
+#sign-in #sign-in-window #sign-right #sign-in-button p {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+#sign-in #sign-in-window #sign-right #sign-in-button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 #navbar {
@@ -100,7 +206,7 @@ header {
   color: lightgrey;
 }
 #navbar #search li:hover {
-  background-color: #2F54D4;
+  background-color: #2F55D4;
 }
 #navbar #search li button {
   background-color: #F8F9FC;
@@ -115,7 +221,7 @@ header {
 #navbar #search li i {
   font-size: 1.1em;
   padding: 10px;
-  color: #2F54D4;
+  color: #2F55D4;
 }
 #navbar #search li i:hover {
   color: white;
@@ -179,7 +285,7 @@ header {
   border: 1px solid #2F55D4;
   border-radius: 7px;
   box-shadow: 0px 2px 5px 0px #2F55D4;
-  background-color: white;
+  background-color: #F8F9FC;
   box-shadow: none;
 }
 #jumbotron #j-left #buttons #doc:hover {

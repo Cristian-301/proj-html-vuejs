@@ -13,6 +13,38 @@
     <div id="container">
 
       <header>
+        <div id="sign-in" v-if="signIn" @click="signIn = false">
+          <div id="sign-in-window">
+            <div id="left-img">
+              <img src="img/ab02.jpg" alt="">
+            </div>
+            <div id="sign-right">
+              <div id="credentials">
+                <div id="your_mail">
+                  <p>Your Email</p>
+                  <i class="far fa-user"></i>
+                  <input type="text" name="" value="" placeholder="Email">
+                </div>
+                <div id="your_password">
+                  <p>Password</p>
+                  <i class="fas fa-key"></i>
+                  <input type="text" name="" value="" placeholder="Password">
+                </div>
+                <div id="checkbox">
+                  <input type="checkbox" name="" value="" id="remember">
+                  <label for="remember">Remember Me</label>
+                  <a href="">Forgot Password?</a>
+                </div>
+                <div id="sign-in-button">
+                  <button>Sign in</button>
+                  <p>Don't Have an account?</p>
+                   <a href="">Sign up</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- navbar -->
         <div id="navbar">
           <div id="logo">
@@ -22,19 +54,20 @@
           </div>
           <div id="menu">
             <ul>
-              <li v-for="menu in navMenu"> <a :href=" menu.link " target="_blank"> {{ menu.name }} <i :class="menu.dropdown"></i> </a> </li>
+              <li v-for="menu in navMenu"
+              > <a :href=" menu.link " target="_blank"> {{ menu.name }} <i :class="menu.dropdown"></i> </a> </li>
             </ul>
           </div>
           <div id="search">
             <ul>
               <li><button><i class="fas fa-search"></i></button></li>
-              <li v-for="button in navButtons"> <a :href="button.link" target="_blank"><i :class="button.icon"></i></a> </li>
+              <li v-for="(button, index) in navButtons"
+               @click="thirdButton(2)"> <a :href="button.link"><i :class="button.icon"></i></a></li>
+
             </ul>
           </div>
         </div>
-        <!-- <div id="sign-in">
 
-        </div> -->
         <!-- /navbar -->
         <!-- jumbotron -->
         <div id="jumbotron-container">

@@ -2,6 +2,8 @@ var app = new Vue({
   el: "#container",
   data: {
     logo: "img/logo-dark.png",
+    signIn: false,
+    buttonIndex: 0,
     navMenu: [
       {
         name: "Home",
@@ -34,7 +36,7 @@ var app = new Vue({
       },
       {
         icon: "far fa-user",
-        link: "#"
+        link: "#sign-in"
       }
     ],
     footerLogo: "img/logo-light.png",
@@ -134,5 +136,12 @@ var app = new Vue({
         link: "https://www.visaitalia.com/"
       },
     ]
+  },
+  methods: {
+    thirdButton: function (index) {
+
+      this.buttonIndex = index;
+      this.signIn = true;
+    }
   }
 })
