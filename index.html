@@ -62,7 +62,7 @@
             <ul>
               <li><button><i class="fas fa-search"></i></button></li>
               <li v-for="(button, index) in navButtons"
-               @click="thirdButton(2)"> <a :href="button.link"><i :class="button.icon"></i></a></li>
+               @click="thirdButton(index)"> <a :href="button.link"><i :class="button.icon"></i></a> </li>
 
             </ul>
           </div>

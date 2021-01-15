@@ -3,7 +3,7 @@ var app = new Vue({
   data: {
     logo: "img/logo-dark.png",
     signIn: false,
-    buttonIndex: 0,
+    buttonIndex: 2,
     navMenu: [
       {
         name: "Home",
@@ -140,8 +140,11 @@ var app = new Vue({
   methods: {
     thirdButton: function (index) {
 
-      this.buttonIndex = index;
-      this.signIn = true;
+      if(index == this.buttonIndex) {
+          this.signIn = true;
+      }
+
+
     }
   }
 })
