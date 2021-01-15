@@ -8,9 +8,9 @@
   height: 74px;
 }
 
-@mixin listStyleNav {
-    list-style: none;
-    display: inline-block;
+@mixin list-inline {
+  list-style: none;
+  display: inline-block;
 }
 
 @mixin jumbotronMeasurements {
@@ -27,11 +27,6 @@
   border: 1px solid $buttonColor;
   border-radius: 7px;
   box-shadow: 0px 2px 5px 0px #2F55D4;
-}
-
-@mixin list-inline {
-  list-style: none;
-  display: inline-block;
 }
 
 @mixin card {

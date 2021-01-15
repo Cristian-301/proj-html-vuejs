@@ -6,11 +6,9 @@
   padding: 70px 0;
   display: flex;
   justify-content: space-between;
-
   #info-social {
     img {
       height: 24px;
-
     }
     p {
       margin: 40px 0;
@@ -18,17 +16,25 @@
       font-weight: bold;
     }
     li {
-      list-style: none;
-      display: inline-block;
-      border: 1px solid white;
+      @include list-inline;
+      border: 1px solid $fontColor;
       border-radius: 5px;
       height: 30px;
       width: 30px;
       margin-right: 5px;
       line-height: 30px;
       text-align: center;
-      a {
+      transition: .9s ease;
+      &:hover {
+        background-color: $buttonColor;
+        border: $buttonColor;
+
+      }
+      &:hover a {
         color: white;
+      }
+      a {
+        color: $fontColor;
       }
     }
   }

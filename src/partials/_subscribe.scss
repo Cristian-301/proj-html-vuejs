@@ -1,18 +1,5 @@
 #subscribe-section {
-  @include containerSpace;
-  padding: 150px 0;
   text-align: center;
-  h2 {
-    font-size: $h2size;
-    margin-bottom: 20px;
-  }
-  p {
-    color: $fontColor;
-    font-weight: bold;
-    span {
-      color: $buttonColor;
-    }
-  }
   #mail {
     margin-top: 50px;
     position: relative;
