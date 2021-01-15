@@ -1,10 +1,5 @@
 #build-tools {
-  @include containerSpace;
-  margin-top: 150px;
   display: flex;
-  // background-image: url($toolsImage);
-  // background-repeat: no-repeat;
-  // background-position: right;
   #toolsImg {
     width: 50%;
     img {
@@ -14,31 +9,26 @@
   }
   #info {
     width: 50%;
-    h2 {
-      font-size: $h2size;
-      margin-bottom: 40px;
-    }
-    p {
-      color: $fontColor;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
+    padding-top: 30px;
     ul {
-      margin-bottom: 40px;
+      margin: 40px 0;
     }
     li {
       list-style: none;
+      margin-bottom: 10px;
       color: $fontColor;
       font-weight: bold;
       i {
-        color: $navMenuHoverColor;
-        margin-bottom: 10px;
+        color: $blueCheckmarks;
       }
     }
     a {
       @include btn;
       background-color: $buttonColor;
       color: white;
+      &:hover {
+        background-color: $buttonHoverColor;
+      }
       i {
         font-size: 12px;
       }

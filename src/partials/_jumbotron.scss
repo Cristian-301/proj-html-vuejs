@@ -32,16 +32,18 @@
       #start {
         @include btn;
         color: white;
-        background-color: $buttonColor;
         margin-right: 10px;
         &:hover{
-          background-color: darken($buttonColor, 5%);
+          background-color: $buttonHoverColor;
         }
       }
       #doc {
         @include btn;
+        background-color: white;
+        box-shadow: none;
         &:hover {
           background-color: $buttonColor;
+          box-shadow: 0px 2px 5px 0px $buttonColor;
           color: white;
         }
       }

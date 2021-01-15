@@ -11,6 +11,7 @@
   </head>
   <body>
     <div id="container">
+
       <header>
         <!-- navbar -->
         <div id="navbar">
@@ -28,10 +29,12 @@
             <ul>
               <li><button><i class="fas fa-search"></i></button></li>
               <li v-for="button in navButtons"> <a :href="button.link" target="_blank"><i :class="button.icon"></i></a> </li>
-
             </ul>
           </div>
         </div>
+        <!-- <div id="sign-in">
+
+        </div> -->
         <!-- /navbar -->
         <!-- jumbotron -->
         <div id="jumbotron-container">
@@ -77,9 +80,9 @@
       </header>
       <main>
         <!-- key features -->
-        <div id="key-features">
-          <h2>Key Features</h2>
-          <p>Start working with <span>Landrick</span> that can provide everything you need to generate <br> awareness, drive traffic, connect.</p>
+        <div id="key-features" class="section-style">
+          <h2 class="h2title">Key Features</h2>
+          <p class="text-style">Start working with <span class="landrick">Landrick</span> that can provide everything you need to generate <br> awareness, drive traffic, connect.</p>
           <div id="features">
             <div class="card">
               <div class="card-overlay">
@@ -87,7 +90,7 @@
               </div>
                 <i class="icon fas fa-layer-group"></i>
                 <h3>Modular</h3>
-                <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
+                <p class="text-style">Composed in a pseudo-Latin language which more or less corresponds.</p>
                 <a href="#">Read More <i class="arrow fas fa-chevron-right"></i></a>
 
             </div>
@@ -97,7 +100,7 @@
               </div>
                 <i class="icon fas fa-desktop"></i>
                 <h3>Responsive</h3>
-                <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
+                <p class="text-style">Composed in a pseudo-Latin language which more or less corresponds.</p>
                 <a href="#">Read More <i class="arrow fas fa-chevron-right"></i></a>
             </div>
             <div class="card">
@@ -106,7 +109,7 @@
               </div>
                 <i class="icon fas fa-atom"></i>
                 <h3>Customizable</h3>
-                <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
+                <p class="text-style">Composed in a pseudo-Latin language which more or less corresponds.</p>
                 <a href="#">Read More <i class="arrow fas fa-chevron-right"></i></a>
             </div>
             <div class="card">
@@ -115,18 +118,18 @@
               </div>
                 <i class="icon fas fa-expand-arrows-alt"></i>
                 <h3>Scalable</h3>
-                <p>Composed in a pseudo-Latin language which more or less corresponds.</p>
+                <p class="text-style">Composed in a pseudo-Latin language which more or less corresponds.</p>
                 <a href="#">Read More <i class="arrow fas fa-chevron-right"></i></a>
             </div>
           </div>
         </div>
         <!-- /key features -->
         <!-- dive in -->
-        <div id="awesome">
+        <div id="awesome" class="section-style">
           <div id="top-part">
             <p id="quickstart">Quickstart</p>
-            <h2>Awesome isn't it? Let's dive in!</h2>
-            <p>Start working with <span>Landrick</span> that can provide everything you need to generate <br> awareness, drive traffic, connect.</p>
+            <h2 class="h2title">Awesome isn't it? Let's dive in!</h2>
+            <p class="text-style">Start working with <span class="landrick">Landrick</span> that can provide everything you need to generate <br> awareness, drive traffic, connect.</p>
           </div>
           <div id="bottom-part">
             <div id="pannel">
@@ -148,10 +151,10 @@
         </div>
         <!-- /dive in -->
         <!-- tools and documentation -->
-        <div id="build-tools">
+        <div id="build-tools" class="section-style">
           <div id="info">
-            <h2>Build tools and <br> extensive documentation</h2>
-            <p>You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
+            <h2 class="h2title">Build tools and <br> extensive documentation</h2>
+            <p class="text-style">You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
             <ul>
               <li><i class="far fa-check-circle"></i> Digital Marketing Solutions for Tomorrow</li>
               <li><i class="far fa-check-circle"></i> Our Talented & Experienced Marketing Agency</li>
@@ -165,8 +168,72 @@
         </div>
         <!-- /tools and documentation -->
         <!-- rates -->
+        <div id="rates" class="section-style">
+          <h2 class="h2title">Our rates for developer from landrick team</h2>
+          <p class="text-style">Start working with <span class="landrick">Landrick</span>  that can provide everything you need to generate awareness, <br> drive traffic, connect.</p>
+          <div id="rate-cards">
+            <div class="rate-card">
+              <h4>Basic</h4>
+              <h3>$9.00</h3>
+              <p id="per-month" class="text-style">Per Month</p>
+              <p class="text-style">All the basics for businesses that are just <br> getting started.</p>
+              <ul>
+                <li><i class="far fa-check-circle"></i> Full Access</li>
+                <li><i class="far fa-check-circle"></i> Enhanced Security</li>
+                <li><i class="far fa-check-circle"></i> Enhanced Security</li>
+                <li><i class="far fa-check-circle"></i> 1 Domain Free</li>
+                <li><i class="far fa-check-circle"></i> Enhanced Security</li>
+              </ul>
+              <a href="">Buy Now</a>
+              <p id="asterisk" class="text-style">&#42; No credit card required</p>
+            </div>
+
+            <div class="rate-card">
+              <div id="ribbon-container">
+                <div id="ribbon">Best</div>
+              </div>
+              <h4>Business</h4>
+              <h3>$39.99</h3>
+              <p id="per-month" class="text-style">Per Month</p>
+              <p class="text-style">Better for growing businesses that want <br> more customers.</p>
+              <ul>
+                <li><i class="far fa-check-circle"></i> Full Access</li>
+                <li><i class="far fa-check-circle"></i> Enhanced Security</li>
+                <li><i class="far fa-check-circle"></i> Enhanced Security</li>
+                <li><i class="far fa-check-circle"></i> 1 Domain Free</li>
+                <li><i class="far fa-check-circle"></i> Enhanced Security</li>
+              </ul>
+              <a href="">Buy Now</a>
+              <p id="asterisk" class="text-style">&#42; No credit card required</p>
+            </div>
+
+            <div class="rate-card">
+              <h4>Enterprise</h4>
+              <h3>$79.99</h3>
+              <p id="per-month" class="text-style">Per Month</p>
+              <p class="text-style">Advanced features for pros who need <br> more customization.</p>
+              <ul>
+                <li><i class="far fa-check-circle"></i> Full Access</li>
+                <li><i class="far fa-check-circle"></i> Enhanced Security</li>
+                <li><i class="far fa-check-circle"></i> Enhanced Security</li>
+                <li><i class="far fa-check-circle"></i> 1 Domain Free</li>
+                <li><i class="far fa-check-circle"></i> Enhanced Security</li>
+              </ul>
+              <a href="">Buy Now</a>
+              <p id="asterisk" class="text-style">&#42; No credit card required</p>
+            </div>
+          </div>
+        </div>
         <!-- /rates -->
         <!-- subscribe -->
+        <div id="subscribe-section">
+          <h2>Want to be among the first to find out?</h2>
+          <p>Start working with <span>Landrick</span>  that can provide everything you need to generate awareness, <br> drive traffic, connect.</p>
+          <div id="mail">
+            <input type="text" name="" value="" placeholder="Email Adress">
+            <a href="">Get Started</a>
+          </div>
+        </div>
         <!-- /subscribe -->
       </main>
       <footer>

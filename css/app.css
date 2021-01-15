@@ -9,6 +9,26 @@
   border-bottom: 1px solid #e9ecef;
 }
 
+.section-style {
+  width: 1110px;
+  margin: auto;
+  padding-top: 150px;
+}
+
+.h2title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.text-style {
+  color: #adb5bd;
+  font-weight: bold;
+}
+
+.landrick {
+  color: #007bff;
+}
+
 header {
   background-color: #F8F9FC;
 }
@@ -137,27 +157,33 @@ header {
   margin-bottom: 20px;
 }
 #jumbotron #j-left #buttons #start {
-  padding: 12px 20px;
+  padding: 10px 25px;
   text-decoration: none;
+  background-color: #2F55D4;
   color: #2F55D4;
   border: 1px solid #2F55D4;
   border-radius: 7px;
+  box-shadow: 0px 2px 5px 0px #2F55D4;
   color: white;
-  background-color: #2F55D4;
   margin-right: 10px;
 }
 #jumbotron #j-left #buttons #start:hover {
   background-color: #284bc1;
 }
 #jumbotron #j-left #buttons #doc {
-  padding: 12px 20px;
+  padding: 10px 25px;
   text-decoration: none;
+  background-color: #2F55D4;
   color: #2F55D4;
   border: 1px solid #2F55D4;
   border-radius: 7px;
+  box-shadow: 0px 2px 5px 0px #2F55D4;
+  background-color: white;
+  box-shadow: none;
 }
 #jumbotron #j-left #buttons #doc:hover {
   background-color: #2F55D4;
+  box-shadow: 0px 2px 5px 0px #2F55D4;
   color: white;
 }
 
@@ -185,28 +211,12 @@ header {
   height: 25px;
 }
 
-#key-features {
-  width: 1110px;
-  margin: auto;
-  margin-top: 150px;
-}
-#key-features h2 {
-  font-size: 34px;
-  margin-bottom: 20px;
-}
-#key-features p {
-  color: #adb5bd;
-  font-weight: bold;
-}
-#key-features p span {
-  color: #2F55D4;
-}
-#key-features #features {
+#features {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
-#key-features #features .card {
+#features .card {
   width: 22%;
   border-radius: 5px;
   padding: 20px;
@@ -215,7 +225,7 @@ header {
   position: relative;
   top: 0;
 }
-#key-features #features .card .icon-overlay {
+#features .card .icon-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -225,7 +235,7 @@ header {
   z-index: -1;
   opacity: 0;
 }
-#key-features #features .card:hover .icon-overlay {
+#features .card:hover .icon-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -236,107 +246,96 @@ header {
   transition: 0.8s ease;
   opacity: 1;
 }
-#key-features #features .card:hover {
+#features .card:hover {
   top: -10px;
 }
-#key-features #features .card .icon {
+#features .card .icon {
+  margin-bottom: 20px;
   background-color: #E4E9F8;
   padding: 20px;
-  font-size: 24px;
   border-radius: 5px;
+  font-size: 24px;
   color: #007bff;
-  margin-bottom: 20px;
   opacity: 0.8;
 }
-#key-features #features .card h3 {
+#features .card h3 {
   margin-bottom: 20px;
 }
-#key-features #features .card p {
+#features .card p {
   margin-bottom: 20px;
   font-size: 15px;
 }
-#key-features #features .card a {
+#features .card a {
+  color: #007bff;
   text-decoration: none;
 }
-#key-features #features .card a .arrow {
+#features .card a .arrow {
   font-size: 12px;
   background-color: white;
 }
 
-#awesome {
-  width: 1110px;
-  margin: auto;
-  margin-top: 150px;
-}
-#awesome #top-part {
+#top-part {
   text-align: center;
 }
-#awesome #top-part #quickstart {
+#top-part #quickstart {
   color: #007bff;
   font-weight: bold;
+  margin-bottom: 20px;
 }
-#awesome #top-part h2 {
-  font-size: 34px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-#awesome #top-part p {
-  color: #adb5bd;
-}
-#awesome #top-part p span {
-  color: #007bff;
-  font-weight: bold;
-}
-#awesome #bottom-part {
+
+#bottom-part {
   width: 704px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 80px;
 }
-#awesome #bottom-part #pannel {
+#bottom-part #pannel {
   background-color: #3c4858;
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
 }
-#awesome #bottom-part #pannel ul {
+#bottom-part #pannel ul {
   background-color: #4F5A69;
   border: 1px solid #586270;
   border-radius: 5px;
 }
-#awesome #bottom-part #pannel li {
+#bottom-part #pannel li {
   list-style: none;
   display: inline-block;
   padding: 10px 60px;
   font-size: 18px;
   color: white;
+  cursor: pointer;
 }
-#awesome #bottom-part #pannel .active {
+#bottom-part #pannel li:hover {
   background-color: #3c4858;
   border-radius: 5px;
 }
-#awesome #bottom-part #pannel p {
+#bottom-part #pannel .active {
+  background-color: #3c4858;
+  border-radius: 5px;
+}
+#bottom-part #pannel p {
   color: #adb5bd;
   font-weight: bold;
   margin-top: 20px;
 }
-#awesome #bottom-part #pannel p span {
+#bottom-part #pannel p span {
   color: #2eca8b;
 }
-#awesome #checkmarks li {
+
+#checkmarks li {
   list-style: none;
   display: inline-block;
   margin-right: 40px;
   color: #adb5bd;
   font-weight: bold;
 }
-#awesome #checkmarks li i {
+#checkmarks li i {
   color: #2eca8b;
 }
 
 #build-tools {
-  width: 1110px;
-  margin: auto;
-  margin-top: 150px;
   display: flex;
 }
 #build-tools #toolsImg {
@@ -348,39 +347,200 @@ header {
 }
 #build-tools #info {
   width: 50%;
-}
-#build-tools #info h2 {
-  font-size: 34px;
-  margin-bottom: 40px;
-}
-#build-tools #info p {
-  color: #adb5bd;
-  font-weight: bold;
-  margin-bottom: 30px;
+  padding-top: 30px;
 }
 #build-tools #info ul {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 #build-tools #info li {
   list-style: none;
+  margin-bottom: 10px;
   color: #adb5bd;
   font-weight: bold;
 }
 #build-tools #info li i {
   color: #007bff;
-  margin-bottom: 10px;
 }
 #build-tools #info a {
-  padding: 12px 20px;
+  padding: 10px 25px;
   text-decoration: none;
+  background-color: #2F55D4;
   color: #2F55D4;
   border: 1px solid #2F55D4;
   border-radius: 7px;
+  box-shadow: 0px 2px 5px 0px #2F55D4;
   background-color: #2F55D4;
   color: white;
 }
+#build-tools #info a:hover {
+  background-color: #284bc1;
+}
 #build-tools #info a i {
   font-size: 12px;
+}
+
+#rates {
+  text-align: center;
+}
+#rates #rate-cards {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+#rates #rate-cards .rate-card {
+  padding: 20px;
+  box-shadow: 0px 0px 2px 0px #adb5bd;
+  border-bottom: 5px solid #adb5bd;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.5s ease;
+  transition: 0.5s ease;
+  position: relative;
+}
+#rates #rate-cards .rate-card:hover {
+  transform: scale(1.05);
+  border-bottom: 5px solid #2F55D4;
+  box-shadow: 0px 0px 10px 0px #adb5bd;
+}
+#rates #rate-cards .rate-card #ribbon-container {
+  position: absolute;
+  right: -6px;
+  top: -5px;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+}
+#rates #rate-cards .rate-card #ribbon-container #ribbon {
+  position: absolute;
+  top: 24px;
+  right: -23px;
+  background-color: #f17425;
+  padding: 0px 43px;
+  text-align: center;
+  color: white;
+  transform: rotate(45deg);
+}
+#rates #rate-cards .rate-card #ribbon-container #ribbon:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid #d55b0e;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #d55b0e;
+}
+#rates #rate-cards .rate-card #ribbon-container #ribbon:after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  z-index: -1;
+  border-right: 3px solid #d55b0e;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #d55b0e;
+}
+#rates #rate-cards .rate-card h4 {
+  display: inline-block;
+  margin-bottom: 15px;
+  background-color: #E4E9F8;
+  color: #007bff;
+  border-radius: 41px;
+  border: 1px solid #E2E8F9;
+  padding: 10px 22px;
+  font-weight: bold;
+  font-size: 16px;
+}
+#rates #rate-cards .rate-card h3 {
+  font-size: 40px;
+}
+#rates #rate-cards .rate-card #per-month {
+  margin-bottom: 20px;
+}
+#rates #rate-cards .rate-card ul {
+  border-top: 1px solid #E2E8F9;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+#rates #rate-cards .rate-card ul li {
+  list-style: none;
+  padding-bottom: 10px;
+  color: #adb5bd;
+  font-weight: bold;
+}
+#rates #rate-cards .rate-card ul li i {
+  color: #007bff;
+}
+#rates #rate-cards .rate-card a {
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: #2F55D4;
+  color: #2F55D4;
+  border: 1px solid #2F55D4;
+  border-radius: 7px;
+  box-shadow: 0px 2px 5px 0px #2F55D4;
+  padding: 12px 119px;
+  background-color: #2F55D4;
+  color: white;
+  box-shadow: 0px 2px 6px 0px #adb5bd;
+  transition: 0.5s ease;
+}
+#rates #rate-cards .rate-card a:hover {
+  background-color: #2443AD;
+}
+#rates #rate-cards .rate-card #asterisk {
+  margin-top: 30px;
+}
+
+#subscribe-section {
+  width: 1110px;
+  margin: auto;
+  padding: 150px 0;
+  text-align: center;
+}
+#subscribe-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#subscribe-section p {
+  color: #adb5bd;
+  font-weight: bold;
+}
+#subscribe-section p span {
+  color: #2F55D4;
+}
+#subscribe-section #mail {
+  margin-top: 50px;
+  position: relative;
+}
+#subscribe-section #mail input {
+  width: 670px;
+  height: 50px;
+  border-radius: 25px;
+  padding-left: 28px;
+  padding-right: 170px;
+  border: 1px solid #EEF1F3;
+}
+#subscribe-section #mail input:focus {
+  outline: none;
+}
+#subscribe-section #mail a {
+  position: absolute;
+  right: 229px;
+  top: 6px;
+  padding: 7px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #2F55D4;
+  border: 1px solid #2F55D4;
+  border-radius: 27px;
+  box-shadow: 0 2px 4px 0px #2f55d4;
+  transition: 0.5s ease;
+}
+#subscribe-section #mail a:hover {
+  background-color: #2443AD;
 }
 
 footer {
@@ -480,11 +640,13 @@ footer {
   border-radius: 5px;
 }
 #footer-top #newsletter #subscribe button {
-  padding: 12px 20px;
+  padding: 10px 25px;
   text-decoration: none;
+  background-color: #2F55D4;
   color: #2F55D4;
   border: 1px solid #2F55D4;
   border-radius: 7px;
+  box-shadow: 0px 2px 5px 0px #2F55D4;
   width: 100%;
   background-color: #222E51;
   border: none;

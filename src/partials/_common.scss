@@ -8,3 +8,23 @@
 #jumbotron-container {
   border-bottom: 1px solid #e9ecef;
 }
+
+.section-style {
+  width: 1110px;
+  margin: auto;
+  padding-top: 150px;
+}
+
+.h2title {
+  font-size: $h2size;
+  margin-bottom: 20px;
+}
+
+.text-style {
+  color: $fontColor;
+  font-weight: bold;
+}
+
+.landrick {
+  color: $navMenuHoverColor;
+}

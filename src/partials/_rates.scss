@@ -1,0 +1,108 @@
+#rates {
+  text-align: center;
+  #rate-cards {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    .rate-card {
+      padding: 20px;
+      box-shadow: 0px 0px 2px 0px #adb5bd;
+      border-bottom: 5px solid #adb5bd;
+      border-radius: 10px;
+      text-align: left;
+      transition: transform .5s ease;
+      transition: .5s ease;
+      position: relative;
+      // overflow: hidden;
+      &:hover {
+        transform: scale(1.05);
+        border-bottom: 5px solid $buttonColor;
+        box-shadow: 0px 0px 10px 0px #adb5bd;
+      }
+      #ribbon-container{
+        position: absolute;
+        right: -6px;
+        top: -5px;
+        width: 85px;
+        height: 85px;
+        overflow: hidden;
+        #ribbon {
+          position: absolute;
+          top: 24px;
+          right: -23px;
+          background-color: #f17425;
+          padding: 0px 43px;
+          text-align: center;
+          color: white;
+          transform: rotate(45deg);
+          &:before {
+            content: '';
+             position: absolute;
+             left: 0px; top: 100%;
+             z-index: -1;
+             border-left: 3px solid darken(#f17425, 10%);
+             border-right: 3px solid transparent;
+             border-bottom: 3px solid transparent;
+             border-top: 3px solid darken(#f17425, 10%);
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            right: 0%; top: 100%;
+            z-index: -1;
+            border-right: 3px solid darken(#f17425, 10%);
+            border-left: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid darken(#f17425, 10%);
+          }
+        }
+      }
+      h4 {
+        display: inline-block;
+        margin-bottom: 15px;
+        background-color: #E4E9F8;
+        color: #007bff;
+        border-radius: 41px;
+        border: 1px solid #E2E8F9;
+        padding: 10px 22px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 40px;
+      }
+      #per-month {
+        margin-bottom: 20px;
+      }
+      ul {
+        border-top: 1px solid #E2E8F9;
+        margin: 20px 0;
+        padding-top: 20px;
+        li {
+          list-style: none;
+          padding-bottom: 10px;
+          color: $fontColor;
+          font-weight: bold;
+          i {
+            color: #007bff;
+          }
+        }
+      }
+      a {
+        @include btn;
+        padding: 12px 119px;
+        background-color: $buttonColor;
+        color: white;
+        box-shadow: 0px 2px 6px 0px #adb5bd;
+        transition: .5s ease;
+        &:hover {
+          background-color: #2443AD;
+        }
+      }
+      #asterisk {
+        margin-top: 30px;
+      }
+    }
+  }
+}
